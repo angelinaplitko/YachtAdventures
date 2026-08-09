@@ -1,0 +1,44 @@
+:root {
+    --color1: #11131F;
+    --color2: #1F212D;
+    --color3: #93ABAE;
+    --gradient-color1: #BEC7C2;
+    --gradient-color1: #A1B5BA;
+    --color4: #F6F5EF;
+}
+
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 20px;
+
+    @media (min-width:768px) {
+        padding: 0 32px;
+    }
+}
+
+/* text styles */
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* text styles */
+
+.hero__title {
+    font-size: 36px;
+
+    @media (min-width:768px) {
+        font-size: 36px;
+        letter-spacing: -4.5%;
+        line-height: 1.1;
+    }
+}

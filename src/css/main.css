@@ -36,28 +36,50 @@ body {
   display: flex;
   gap: 56px;
 }
-.info__infos {
-  display: flex;
-  flex-direction: column;
-}
 .info__item {
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F212D;
+  border-radius: 24px;
   width: 335px;
   height: 469px;
+}
+.info__image {
+  position: relative;
   border-radius: 24px;
-  background-color: #1F212D;
-  flex-shrink: 0;
+  width: 299px;
+  height: 251px;
+  top: 15px;
+  left: 20px;
 }
 .info__name {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: white;
-  margin-top: 24px;
-  padding-left: 24px;
+  color: #F6F5EF;
+  left: 24px;
+  top: 15px;
 }
-.info__firma {
+.info__nameB {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #F6F5EF;
+  left: 24px;
+  top: 15px;
+}
+.info__logo {
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 118%;
@@ -65,9 +87,21 @@ body {
   text-transform: uppercase;
   color: #F6F5EF;
   opacity: 0.5;
+  left: 225px;
+  bottom: 20px;
 }
-.info__qusetion {
-  display: block;
+.info__speaks {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  left: 24px;
+}
+.info__questions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.info__question {
   font-weight: 400;
   font-size: 14px;
   line-height: 118%;
@@ -75,23 +109,17 @@ body {
   text-transform: uppercase;
   color: #F6F5EF;
 }
+.info__answers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 .info__answer {
   font-weight: 400;
   font-size: 14px;
   line-height: 118%;
   letter-spacing: 0.03em;
   color: #F6F5EF;
-}
-.info__boat {
-  border-radius: 24px;
-  width: 299px;
-  height: 251px;
-  padding-top: 18px;
-  padding-left: 35px;
-}
-.info__questions {
-  display: flex;
-  flex-direction: column;
 }
 
 .team {

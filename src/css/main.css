@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
   background-color: #0b1018;
   padding: 20px 10px;
@@ -336,6 +337,47 @@
 }
 
 h1, h2, h3, p {
+=======
+root {
+  --bg: #11131f;
+  --card: #1f212d;
+  --text: #f6f5ef;
+  --muted: rgba(246, 245, 239, 0.64);
+  --accent: #a1b5ba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(
+      circle at 78% 61%,
+      rgba(161, 181, 186, 0.24),
+      transparent 260px
+    ),
+    radial-gradient(
+      circle at 18% 24%,
+      rgba(161, 181, 186, 0.14),
+      transparent 300px
+    ),
+    var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+>>>>>>> origin/timo
   margin: 0;
 }
 
@@ -345,34 +387,37 @@ ul {
   margin: 0;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-a {
-  -webkit-text-decoration: 0;
-  text-decoration: 0;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img[src="#"] {
+  visibility: hidden;
 }
 
 .container {
-  width: 375px;
+  width: min(100% - 40px, 1216px);
   margin: 0 auto;
-  padding: 0 20px;
-  outline: 1px solid red;
-  box-sizing: border-box;
 }
 
-body {
-  background-color: #11131F;
+.header {
+  border-bottom: 1px solid rgba(246, 245, 239, 0.12);
 }
 
-.info__list {
+.header .container,
+.footer .container {
   display: flex;
-  gap: 56px;
+  align-items: center;
+  justify-content: space-between;
 }
+<<<<<<< HEAD
 .info__item {
   flex-shrink: 0;
   justify-content: center;
@@ -392,11 +437,22 @@ body {
 }
 .info__name {
   position: relative;
+=======
+
+.header .container {
+  min-height: 72px;
+}
+
+.header a:first-child,
+.footer a:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+>>>>>>> origin/timo
   font-weight: 700;
-  font-size: 16px;
-  line-height: 120%;
-  letter-spacing: -0.04em;
+  font-size: 13px;
   text-transform: uppercase;
+<<<<<<< HEAD
   color: #F6F5EF;
   left: 24px;
   top: 15px;
@@ -457,175 +513,618 @@ body {
   line-height: 118%;
   letter-spacing: 0.03em;
   color: #F6F5EF;
+=======
 }
 
-.team {
+.header a:first-child::before,
+.footer a:first-child::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.header__list,
+.footer__list {
+  display: flex;
+  gap: 28px;
+>>>>>>> origin/timo
+}
+
+.header__link,
+.footer__list a,
+.footer h4 {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.hero {
+  padding: 68px 0 92px;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 150px;
+  align-items: center;
+}
+
+.hero__albom {
   position: relative;
-  overflow: hidden;
-  padding: 110px 0 70px;
-  background: radial-gradient(circle at 20% 10%, rgba(100, 112, 190, 0.25), transparent 35%), radial-gradient(circle at 80% 60%, rgba(77, 91, 170, 0.18), transparent 35%), linear-gradient(135deg, #090d32 0%, #111644 50%, #080b2b 100%);
+  grid-column: 1;
+  grid-row: 1 / 6;
+  width: 430px;
+  min-height: 560px;
+  padding: 38px 36px;
+  border-radius: 24px;
+  color: #11131f;
+  background: linear-gradient(145deg, #dce7df, #a7b9bd);
+  box-shadow: 0 44px 100px rgba(161, 181, 186, 0.22);
 }
 
-.team::before {
+.hero__albom::before {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 500px;
-  top: -250px;
-  left: -200px;
-  background: rgba(118, 129, 211, 0.12);
-  border-radius: 50%;
-  filter: blur(100px);
-  pointer-events: none;
+  left: 40px;
+  bottom: 140px;
+  width: 320px;
+  height: 155px;
+  background: url("../img/boat1.webp") center / contain no-repeat;
+  filter: drop-shadow(0 22px 16px rgba(17, 19, 31, 0.25));
 }
 
-/* ========================= TEAM TEXTS ========================= */
-.team__texts {
+.hero__albom::after {
+  content: "";
+  position: absolute;
+  right: 54px;
+  bottom: -30px;
+  width: 180px;
+  height: 64px;
+  border-radius: 0 0 22px 22px;
+  background: #a7b9bd;
+}
+
+.albom__list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 80px;
-  margin-bottom: 60px;
-  animation: fadeUp 0.8s ease forwards;
 }
 
-.team__subtitle {
-  max-width: 520px;
-  font-size: 28px;
-  line-height: 1.2;
-  font-weight: 400;
+.albom__item {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #f6f5ef;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5c7ac, #835c55);
 }
 
-.team__bold {
+.albom__item:nth-child(2) {
+  background: linear-gradient(135deg, #ecd5c5, #57677d);
+}
+
+.albom__item:nth-child(3) {
+  background: linear-gradient(135deg, #efc195, #8d4b3e);
+}
+
+.albom__item + .albom__item {
+  margin-left: -12px;
+}
+
+.hero__clients {
+  margin-top: 12px;
   font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
+.hero .container > img {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+  width: 230px;
+  height: 230px;
+  border-radius: 22px;
+  object-fit: cover;
+  background: url("../img/boat2.webp") center / cover no-repeat;
+  transform: translateX(105px) translateY(34px);
+  visibility: visible;
+}
+
+.hero__money {
+  position: absolute;
+  left: 36px;
+  bottom: 62px;
+  z-index: 1;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.hero__albom .hero__text {
+  position: absolute;
+  left: 180px;
+  right: 36px;
+  bottom: 58px;
+  z-index: 1;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.hero__title {
+  grid-column: 2;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.hero__title--ital {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero .container > .hero__text {
+  grid-column: 2;
+  max-width: 560px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.hero__start,
+.hero__explore,
+.dream__button,
+.send__button {
+  min-height: 40px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero__start {
+  grid-column: 2;
+  justify-self: start;
+  margin-top: 30px;
+  color: #11131f;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+}
+
+.hero__explore {
+  grid-column: 2;
+  justify-self: start;
+  margin-top: 30px;
+  margin-left: 142px;
+  color: var(--text);
+  border: 1px solid rgba(246, 245, 239, 0.45);
+  background: transparent;
+}
+
+.explain {
+  padding: 30px 0 105px;
+}
+
+.explain .container,
+.send .container,
+.team__texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: start;
+}
+
+.explain__subtext,
+.team__subtitle,
+.send__title {
+  max-width: 520px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+
+.explain__subtext {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.explain__bald,
+.team__bold {
+  color: var(--text);
+}
+
+.explain__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.explain__text,
 .team__subtext {
-  max-width: 400px;
   font-size: 15px;
-  line-height: 1.5;
-  opacity: 0.85;
+  line-height: 1.45;
 }
 
-/* ========================= REVIEWS ========================= */
-.team__list {
+.dream {
+  padding-bottom: 95px;
+}
+
+.dream .container {
+  position: relative;
+}
+
+.dream .container::before {
+  content: "";
+  position: absolute;
+  left: -160px;
+  bottom: -120px;
+  z-index: -1;
+  width: 900px;
+  height: 520px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    ellipse at center,
+    rgba(246, 245, 239, 0.1) 0 1px,
+    transparent 1px 26px
+  );
+  opacity: 0.22;
+}
+
+.dream__list {
+  display: grid;
+  grid-template-columns: 320px 1fr 250px;
+  grid-template-rows: 215px 215px 140px;
+  gap: 30px;
+  align-items: end;
+}
+
+.dream__item {
+  border-radius: 24px;
+  background: center / cover no-repeat;
+  overflow: hidden;
+}
+
+.dream__item:nth-child(1) {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  height: 460px;
+  background-image: url("../img/boat4.webp");
+}
+
+.dream__item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+  height: 215px;
+  background-image: url("../img/boat5.webp");
+}
+
+.dream__item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 3;
+  width: 260px;
+  height: 140px;
+  background-image: url("../img/boat1.webp");
+}
+
+.dream__title {
+  max-width: 760px;
+  margin: -40px 0 0 170px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.dream__button {
+  margin: 48px 0 0 170px;
+  color: var(--text);
+  border: 1px solid rgba(246, 245, 239, 0.45);
+  background: transparent;
+}
+
+.info {
+  padding: 40px 0 120px;
+  overflow: hidden;
+  width: min(100% - 40px, 1216px);
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.info > .container,
+.info__list {
+  display: contents;
+}
+
+.info > .info__item:nth-of-type(n + 2) {
+  display: none;
+}
+
+.info > .info__item {
+  display: block;
+}
+
+.info__item {
+  min-width: 0;
+  min-height: 470px;
+  padding: 18px;
+  border-radius: 24px;
+  background: var(--card);
+}
+
+.info__boat {
+  width: 100%;
+  height: 260px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.info__name {
+  margin-top: 28px;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.info__firma {
+  float: right;
+  margin-top: -16px;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.info__infos {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.info__qusetion,
+.info__question,
+.info__answer {
+  white-space: pre-line;
+  font-size: 13px;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.info__answer {
+  text-transform: none;
+  color: rgba(246, 245, 239, 0.84);
+}
+
+.aktivities {
+  padding-bottom: 125px;
+}
+
+.aktivities__list {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 58px;
+  align-items: center;
+}
+
+.aktivities__item {
+  position: relative;
+  min-height: 410px;
+  border-radius: 24px;
+  background: center / cover no-repeat;
+  overflow: hidden;
+}
+
+.aktivities__item:nth-child(1) {
+  background-image: url("../img/boat6.webp");
+}
+
+.aktivities__item:nth-child(2) {
+  background-image: url("../img/boat7.webp");
+}
+
+.aktivities__item:nth-child(3) {
+  grid-column: 1 / 3;
+  justify-self: center;
+  width: 430px;
+  min-height: 255px;
+  background-image: url("../img/boat8.webp");
+}
+
+.aktivities__item button {
+  position: absolute;
+  left: 34px;
+  bottom: 34px;
+  min-width: 94px;
+  min-height: 42px;
+  border: 0;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #11131f;
+  background: var(--text);
+}
+
+.send {
+  padding-bottom: 115px;
+}
+
+.send .container > img {
+  grid-column: 1;
+  width: 280px;
+  height: 180px;
+  margin-top: 70px;
+  border-radius: 18px;
+  object-fit: cover;
+  background: url("../img/boat9.png") center / cover no-repeat;
+  visibility: visible;
+}
+
+.send form {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: grid;
   gap: 24px;
 }
 
-/* CARD */
+.send input,
+.send textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.45);
+  padding: 0 0 18px;
+  color: var(--text);
+  background: transparent;
+  outline: 0;
+}
+
+.send textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.send input::placeholder,
+.send textarea::placeholder {
+  color: var(--text);
+  opacity: 1;
+}
+
+.send__button {
+  justify-self: start;
+  min-width: 120px;
+  color: var(--text);
+  border: 1px solid rgba(246, 245, 239, 0.45);
+  background: transparent;
+}
+
+.team {
+  padding-bottom: 86px;
+}
+
+.team__texts {
+  margin-bottom: 64px;
+}
+
+.team__subtext {
+  align-self: end;
+  max-width: 420px;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
 .team__item {
-  position: relative;
-  min-height: 350px;
-  padding: 45px 35px 35px;
-  border-radius: 24px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-  animation: cardAppear 0.8s ease forwards;
+  min-height: 230px;
+  padding: 28px 26px;
+  border-radius: 18px;
+  text-align: center;
+  background: var(--card);
 }
 
-.team__item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.team__item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.team__item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-/* HOVER */
-.team__item:hover {
-  transform: translateY(-12px);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
-}
-
-/* ========================= AVATAR ========================= */
 .team__item img {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 22px;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 14px;
+  border: 3px solid var(--text);
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.7);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: linear-gradient(135deg, #f5c7ac, #835c55);
+  visibility: visible;
 }
 
-.team__item:hover img {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(180, 190, 255, 0.45);
+.team__item:nth-child(2) img {
+  background: linear-gradient(135deg, #edd9c9, #5e6c83);
 }
 
-/* ========================= NAME ========================= */
+.team__item:nth-child(3) img {
+  background: linear-gradient(135deg, #f1c094, #8d4b3e);
+}
+
 .team__name {
-  margin-bottom: 18px;
-  text-align: center;
-  font-size: 17px;
+  margin-bottom: 12px;
   font-weight: 700;
+  font-size: 16px;
 }
 
-/* ========================= REVIEW TEXT ========================= */
 .team__text {
-  text-align: center;
+  color: var(--muted);
   font-size: 14px;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.45;
 }
 
-/* ========================= SLIDER ========================= */
 .team__slider {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 45px;
+  justify-content: space-between;
+  margin-top: 28px;
 }
 
 .team__dots {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .team__dot {
-  width: 32px;
-  height: 4px;
-  display: block;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  transition: width 0.3s ease, background 0.3s ease;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(246, 245, 239, 0.25);
 }
 
 .team__dot.active {
-  width: 55px;
-  background: #ffffff;
+  background: var(--accent);
 }
 
-/* NEXT BUTTON */
 .team__next {
-  width: 58px;
-  height: 58px;
-  border: none;
-  border-radius: 12px;
-  background: rgba(190, 224, 226, 0.8);
-  color: #ffffff;
-  font-size: 25px;
-  cursor: pointer;
-  transform: rotate(-90deg);
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  width: 54px;
+  height: 54px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--accent);
+  font-size: 28px;
+  font-weight: 700;
 }
 
+<<<<<<< HEAD
 .team__next:hover {
   transform: translateX(6px);
   background: rgb(210, 235, 235);
   box-shadow: 0 10px 30px rgba(180, 220, 230, 0.25);
+=======
+.footer {
+  padding: 50px 0 40px;
+  border-top: 1px solid rgba(246, 245, 239, 0.12);
+}
+
+.footer .container {
+  position: relative;
+  min-height: 150px;
+}
+
+.footer h4 {
+  margin: 0 0 18px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__socials a {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(246, 245, 239, 0.32);
+  border-radius: 4px;
+>>>>>>> origin/timo
 }
 
 @media (max-width: 1023px) {
@@ -633,87 +1132,158 @@ body {
   .info {
     width: min(100% - 40px, 768px);
   }
+<<<<<<< HEAD
   .hero {
     padding: 52px 0 70px;
   }
+=======
+
+  .hero {
+    padding: 52px 0 70px;
+  }
+
+>>>>>>> origin/timo
   .hero .container {
     display: flex;
     flex-direction: column;
     gap: 32px;
     align-items: flex-start;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__title {
     order: -3;
     max-width: 700px;
     font-size: 58px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero .container > .hero__text {
     order: -2;
     margin-top: -16px;
     max-width: 570px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__start,
   .hero__explore {
     order: -1;
     margin-top: -10px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__explore {
     margin-left: 140px;
     transform: translateY(-72px);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__albom {
     width: 445px;
     min-height: 520px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero .container > img {
     position: absolute;
     width: 230px;
     height: 230px;
     transform: translate(410px, 312px);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .explain .container,
   .send .container,
   .team__texts {
     grid-template-columns: 1fr;
     gap: 38px;
   }
+<<<<<<< HEAD
   .explain {
     padding-bottom: 85px;
   }
+=======
+
+  .explain {
+    padding-bottom: 85px;
+  }
+
+>>>>>>> origin/timo
   .explain__subtext,
   .team__subtitle,
   .send__title {
     max-width: 520px;
     font-size: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .explain__list {
     max-width: 510px;
     margin-left: auto;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .dream__list {
     grid-template-columns: 180px 1fr 100px;
     grid-template-rows: 360px 170px;
   }
+<<<<<<< HEAD
   .dream__item:nth-child(1) {
     grid-column: 1/4;
     grid-row: 1;
     height: 360px;
   }
+=======
+
+  .dream__item:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 360px;
+  }
+
+>>>>>>> origin/timo
   .dream__item:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
     height: 170px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .dream__item:nth-child(3) {
     grid-column: 2;
     grid-row: 2;
     width: 180px;
     height: 105px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .dream__title {
     margin: -10px 0 0 30px;
     font-size: 58px;
   }
+<<<<<<< HEAD
   .dream__button {
     margin-left: 30px;
   }
@@ -726,32 +1296,79 @@ body {
   .info__list .info__item:nth-child(n+3) {
     display: none;
   }
+=======
+
+  .dream__button {
+    margin-left: 30px;
+  }
+
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info > .info__item {
+    display: none;
+  }
+
+  .info__list .info__item:nth-child(n + 3) {
+    display: none;
+  }
+
+>>>>>>> origin/timo
   .aktivities__list {
     grid-template-columns: 1fr 0.68fr;
     gap: 38px;
   }
+<<<<<<< HEAD
   .aktivities__item {
     min-height: 380px;
   }
+=======
+
+  .aktivities__item {
+    min-height: 380px;
+  }
+
+>>>>>>> origin/timo
   .aktivities__item:nth-child(3) {
     grid-column: 1;
     width: 345px;
     margin-left: 32px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .send form {
     grid-column: 1;
     grid-row: auto;
   }
+<<<<<<< HEAD
   .team__list {
     grid-template-columns: repeat(2, 1fr);
   }
   .team__item:nth-child(3) {
     display: none;
   }
+=======
+
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team__item:nth-child(3) {
+    display: none;
+  }
+
+>>>>>>> origin/timo
   .footer .container {
     align-items: flex-start;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
 @media (max-width: 767px) {
   .container,
   .info {
@@ -759,12 +1376,24 @@ body {
     padding-left: 14px;
     padding-right: 14px;
   }
+<<<<<<< HEAD
   .header .container {
     min-height: 56px;
   }
   .header__nav {
     display: none;
   }
+=======
+
+  .header .container {
+    min-height: 56px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+>>>>>>> origin/timo
   .header .container::after {
     content: "";
     width: 18px;
@@ -772,23 +1401,47 @@ body {
     border-top: 2px solid var(--text);
     border-bottom: 2px solid var(--text);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .header a:first-child,
   .footer a:first-child {
     font-size: 11px;
   }
+<<<<<<< HEAD
   .hero {
     padding: 36px 0 58px;
   }
   .hero .container {
     gap: 20px;
   }
+=======
+
+  .hero {
+    padding: 36px 0 58px;
+  }
+
+  .hero .container {
+    gap: 20px;
+  }
+
+>>>>>>> origin/timo
   .hero__title {
     font-size: 36px;
     line-height: 1.08;
   }
+<<<<<<< HEAD
   .hero .container > .hero__text {
     font-size: 13px;
   }
+=======
+
+  .hero .container > .hero__text {
+    font-size: 13px;
+  }
+
+>>>>>>> origin/timo
   .hero__start,
   .hero__explore,
   .dream__button,
@@ -797,10 +1450,18 @@ body {
     padding: 0 17px;
     font-size: 12px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__explore {
     margin-left: 118px;
     transform: translateY(-54px);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__albom {
     width: 100%;
     max-width: none;
@@ -809,73 +1470,134 @@ body {
     border-radius: 18px;
     margin-top: -34px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__albom::after {
     right: 54px;
     bottom: -22px;
     width: 130px;
     height: 46px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__albom::before {
     left: 24px;
     bottom: 120px;
     width: 270px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .albom__item {
     width: 38px;
     height: 38px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero .container > img {
     width: 118px;
     height: 118px;
     transform: translate(196px, 300px);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__money {
     left: 24px;
     bottom: 52px;
     font-size: 42px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .hero__albom .hero__text {
     left: 142px;
     right: 24px;
     bottom: 48px;
     font-size: 11px;
   }
+<<<<<<< HEAD
   .explain {
     padding: 44px 0 70px;
   }
+=======
+
+  .explain {
+    padding: 44px 0 70px;
+  }
+
+>>>>>>> origin/timo
   .explain__subtext,
   .team__subtitle,
   .send__title {
     font-size: 24px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .explain__list {
     grid-template-columns: 1fr;
     gap: 22px;
     margin-left: 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .explain__text,
   .team__subtext {
     font-size: 13px;
   }
+<<<<<<< HEAD
   .dream {
     padding-bottom: 62px;
   }
   .dream__list {
     display: block;
   }
+=======
+
+  .dream {
+    padding-bottom: 62px;
+  }
+
+  .dream__list {
+    display: block;
+  }
+
+>>>>>>> origin/timo
   .dream__item {
     width: 100% !important;
     height: 220px !important;
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
   .dream__item:first-child {
     height: 440px !important;
   }
+=======
+
+  .dream__item:first-child {
+    height: 440px !important;
+  }
+
+>>>>>>> origin/timo
   .dream__title {
     margin: 0;
     font-size: 36px;
     line-height: 1.08;
   }
+<<<<<<< HEAD
   .dream__button {
     margin: 24px 0 0;
   }
@@ -894,10 +1616,41 @@ body {
   .aktivities {
     padding-bottom: 76px;
   }
+=======
+
+  .dream__button {
+    margin: 24px 0 0;
+  }
+
+  .info {
+    padding-bottom: 70px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info__list .info__item:nth-child(n + 2) {
+    display: none;
+  }
+
+  .info__boat {
+    height: 235px;
+  }
+
+  .aktivities {
+    padding-bottom: 76px;
+  }
+
+>>>>>>> origin/timo
   .aktivities__list {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .aktivities__item,
   .aktivities__item:nth-child(3) {
     width: 100%;
@@ -905,18 +1658,31 @@ body {
     margin: 0;
     grid-column: auto;
   }
+<<<<<<< HEAD
   .send {
     padding-bottom: 76px;
   }
+=======
+
+  .send {
+    padding-bottom: 76px;
+  }
+
+>>>>>>> origin/timo
   .send .container > img {
     width: 260px;
     height: 170px;
     margin-top: 28px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .team__texts {
     gap: 20px;
     margin-bottom: 38px;
   }
+<<<<<<< HEAD
   .team__list {
     grid-template-columns: 1fr;
   }
@@ -926,13 +1692,36 @@ body {
   .footer {
     padding-top: 36px;
   }
+=======
+
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+  .team__item:nth-child(n + 2) {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 36px;
+  }
+
+>>>>>>> origin/timo
   .footer .container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 28px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/timo
   .footer__list {
     display: grid;
     gap: 12px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/timo

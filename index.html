@@ -7,8 +7,12 @@
     <title>YACHT ADVENTURES</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/main.min.css">
 </head>
 
@@ -37,21 +41,21 @@
                 <div class="hero__albom">
                     <ul class="albom__list">
                         <li class="albom__item">
-                            <img src="#" alt="man1" class="albom__people">
+                            <img src="./src/img/hero.man1.png" alt="man1" class="albom__people">
                         </li>
                         <li class="albom__item">
-                            <img src="#" alt="woman" class="albom__people">
+                            <img src="./src/img/hero.woman.png" alt="woman" class="albom__people">
                         </li>
                         <li class="albom__item">
-                            <img src="#" alt="man2" class="albom__people">
+                            <img src="./src/img/hero.man2.png" alt="man2" class="albom__people">
                         </li>
                     </ul>
                     <p class="hero__clients">Our Clients</p>
-                    <img src="#" alt="boat" class="hero__boat">
+                    <img src="./src/img/hero.yacht.png" alt="boat" class="hero__boat">
                     <h3 class="hero__money">$12M</h3>
                     <p class="hero__text">Book now and make your dream yacht rental a reality</p>
                 </div>
-                <img src="#" alt="richboy">
+                <img src="./src/img/richboy.png" alt="richboy">
                 <h2 class="hero__title">Explore the High Seas with <span class="hero__title--ital">Our Luxury
                         Yacht</span> Rentals</h2>
                 <p class="hero__text">Experience the freedom and luxury of yachting on the open seas. Choose from our
@@ -83,234 +87,284 @@
             </div>
         </section>
         <section class="dream">
-            <div class="container">
-                <ul class="dream__list">
-                    <li class="dream__item">
-                        <img src="#" alt="boat">
-                    </li>
-                    <li class="dream__item">
-                        <img src="#" alt="boat2">
-                    </li>
-                    <li class="dream__item">
-                        <img src="#" alt="boat3">
-                    </li>
-                </ul>
-                <h2 class="dream__title">Choose your dream yacht and sail away into the sunset</h2>
-                <button class="dream__button">Yacht rental</button>
-            </div>
-        </section>
+      <div class="container">
+        <ul class="dream__list">
+          <li class="dream__item1">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./src/img/img-dream/cyd1-1x-desktop.png 1x,
+                  ./src/img/img-dream/cyd1-2x-desktop.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./src/img/img-dream/cyd1-1x-tablet.png 1x,
+                  ./src/img/img-dream/cyd1-2x-tablet.png 2x
+                "
+              />
+              <img
+                src="./img/cyd1-1x-mobile.png"
+                srcset="./src/img/img-dream/cyd1-2x-mobile.png 2x"
+                alt=""
+              />
+            </picture>
+          </li>
+
+          <li class="dream__item2">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./src/img/img-dream/cyd2-1x-desktop.png 1x,
+                  ./src/img/img-dream/cyd2-2x-desktop.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./src/img/img-dream/cyd2-1x-tablet.png 1x,
+                  ./src/img/img-dream/cyd2-2x-tablet.png 2x
+                "
+              />
+              <img
+                src="./src/img/img-dream/cyd2-1x-mobile.png"
+                srcset="./src/img/img-dream/cyd2-2x-mobile.png 2x"
+                alt=""
+              />
+            </picture>
+          </li>
+
+          <li class="dream__item3">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./src/img/img-dream/cyd3-1x-desktop.png 1x,
+                  ./src/img/img-dream/cyd3-2x-desktop.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/img-dream/cyd3-1x-tablet.png 1x,
+                  ./img/img-dream/cyd3-2x-tablet.png 2x
+                "
+              />
+              <img
+                src="./src/img/img-dream/cyd3-1x-mobile.png"
+                srcset="./src/img/img-dream/cyd3-2x-mobile.png 2x"
+                alt=""
+              />
+            </picture>
+          </li>
+        </ul>
+        <div class="text--btn">
+          <h2 class="dream__title">
+            Choose your dream yacht and sail away into the sunset
+          </h2>
+          <button class="dream__button" type="button">Yacht rental</button>
+        </div>
+        <img class="elipse" src="./src/img/img-dream/Ellipse-7268.png" alt="" />
+      </div>
+    </section>
         <section class="info">
             <div class="container">
                 <ul class="info__list">
                     <li class="info__item">
-                        <img src="#" alt="sheef1">
-                        <h3>Arrow</h3>
-                        <p>LUXURY YAHTS</p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                48m(155ft)
-                                Admiral
-                                2021
-                                11 in 5 cabins
-                                €33,500,000
-                            </pre>
+                        <img src="./src/img/boat1.webp" alt="" class="info__image">
+                        <h4 class="info__name">Arrow</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">48m(155ft) </p>
+                                <p class="info__answer">Admiral</p>
+                                <p class="info__answer">2021</p>
+                                <p class="info__answer">11 in 5 cabins</p>
+                                <p class="info__answer">€33,500,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef2">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                41m (133ft)
-                                Benetti
-                                2025
-                                10 in 5 cabins
-                                €23,210,000
-                            </pre>
+                        <img src="./src/img/boat2.webp" alt="" class="info__image">
+                        <h4 class="info__nameB">BENETTI OASIS 40M BO122</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">41m (133ft)</p>
+                                <p class="info__answer">Benetti</p>
+                                <p class="info__answer">2025</p>
+                                <p class="info__answer">10 in 5 cabins</p>
+                                <p class="info__answer">€23,210,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef3">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                50m(155ft)
-                                ISA
-                                2012
-                                12 in 6 cabins
-                                €21,000,000
-                            </pre>
+                        <img src="./src/img/boat3.webp" alt="" class="info__image">
+                        <h4 class="info__name">BELLE ANNA</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">50m(155ft)</p>
+                                <p class="info__answer">ISA</p>
+                                <p class="info__answer">2012</p>
+                                <p class="info__answer">12 in 6 cabins</p>
+                                <p class="info__answer">€21,000,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef4">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                40m (132ft)
-                                Perini Navi
-                                2001 / 2016 (refitted)
-                                9 in 4 cabins
-                                €9,300,000
-                            </pre>
+                        <img src="./src/img/boat4.webp" alt="" class="info__image">
+                        <h4 class="info__name">Ellen</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">40m (132ft)</p>
+                                <p class="info__answer">Perini Navi</p>
+                                <p class="info__answer">2001 / 2016 (refitted)</p>
+                                <p class="info__answer">9 in 4 cabins</p>
+                                <p class="info__answer">€9,300,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef5">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                38m (125ft)
-                                Gianetti Custom Yachts
-                                2024
-                                10 in 5 cabins
-                                €13,500,000
-                            </pre>
+                        <img src="./src/img/boat5.webp" alt="" class="info__image">
+                        <h4 class="info__name">MIRAGE 401</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">38m (125ft)</p>
+                                <p class="info__answer">Gianetti Custom Yachts</p>
+                                <p class="info__answer">2024</p>
+                                <p class="info__answer">10 in 5 cabins</p>
+                                <p class="info__answer">€13,500,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef6">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                33m (109ft)
-                                Overmarine
-                                2004 / 2018 (refitted)
-                                9 in 4 cabins
-                                €1,850,000
-                            </pre>
+                        <img src="./src/img/boat6.webp" alt="" class="info__image">
+                        <h4 class="info__name">KING</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">33m (109ft)</p>
+                                <p class="info__answer">Overmarine</p>
+                                <p class="info__answer">2004 / 2018 (refitted)</p>
+                                <p class="info__answer">9 in 4 cabins</p>
+                                <p class="info__answer">€1,850,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef7">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                32m (105ft)
-                                SanLorenzo
-                                2019
-                                11 in 5 cabins
-                                €7,800,000
-                            </pre>
+                        <img src="./src/img/boat7.webp" alt="" class="info__image">
+                        <h4 class="info__name">SALT</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">32m (105ft)</p>
+                                <p class="info__answer">SanLorenzo</p>
+                                <p class="info__answer">2019</p>
+                                <p class="info__answer">11 in 5 cabins</p>
+                                <p class="info__answer">€7,800,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef8">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                32m (103ft)
-                                Overmarine
-                                2005 / 2022 (refitted)
-                                9 in 4 cabins
-                                €2,900,000
-                            </pre>
+                        <img src="./src/img/boat8.webp" alt="" class="info__image">
+                        <h4 class="info__name">STORM</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">32m (103ft)</p>
+                                <p class="info__answer">Overmarine</p>
+                                <p class="info__answer">2005 / 2022 (refitted)</p>
+                                <p class="info__answer">9 in 4 cabins</p>
+                                <p class="info__answer">€2,900,000</p>
+                            </div>
                         </div>
                     </li>
                     <li class="info__item">
-                        <img src="#" alt="sheef9">
-                        <h3></h3>
-                        <p></p>
-                        <div class="info__questions">
-                            <pre class="info__qusetion">
-                                LENGTH
-                                BUILDER
-                                BUILT
-                                GUESTS
-                                PRICE
-                            </pre>
-                        </div>
-                        <div class="info__answers">
-                            <pre class="info__answer">
-                                48m(155ft)
-                                Admiral
-                                2021
-                                11 in 5 cabins
-                                €33,500,000
-                            </pre>
+                        <img src="./src/img/boat9.png" alt="" class="info__image">
+                        <h4 class="info__name">COLLU</h4>
+                        <p class="info__logo">LUXURY YAHTS</p>
+                        <div class="info__speaks">
+                            <div class="info__questions">
+                                <p class="info__question">LENGTH</p>
+                                <p class="info__question">BUILDER</p>
+                                <p class="info__question">BUILT</p>
+                                <p class="info__question">GUESTS</p>
+                                <p class="info__question">PRICE</p>
+                            </div>
+                            <div class="info__answers">
+                                <p class="info__answer">29m (96ft)</p>
+                                <p class="info__answer">Ferretti</p>
+                                <p class="info__answer">2014</p>
+                                <p class="info__answer">10 in 5 cabins</p>
+                                <p class="info__answer">$4,300,000</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
+        </section>
         </section>
         <section class="aktivities">
             <div class="container">
@@ -332,7 +386,7 @@
         </section>
         <section class="send">
             <div class="container">
-                <h2 class="send__button">Rent a yacht now</h2>
+                <h2 class="send__title">Rent a yacht now</h2>
                 <img src="#" alt="boat">
                 <form>
                     <label>
@@ -345,7 +399,7 @@
                         <input type="tel" placeholder="Phone number">
                     </label>
                     <label>
-                        <textarea>Comment</textarea>
+                        <textarea placeholder="Comment"></textarea>
                     </label>
                     <button type="submit" class="send__button">Send</button>
                 </form>
@@ -364,32 +418,43 @@
                 </div>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="#" alt="">
+                        <img src="./src/img/man1.webp" alt="John">
                         <p class="team__name">John Wax</p>
-                        <p class="team__text">I rented the Lagoon 620 with my family for a week-long vacation and it was
-                            the
-                            best decision ever. The yacht was spacious, comfortable, and luxurious, and the crew took
-                            care
-                            of everything. </p>
+                        <p class="team__text">
+                            I rented the Lagoon 620 with my family for a week-long vacation
+                            and it was the best decision ever. The yacht was spacious,
+                            comfortable, and luxurious, and the crew took care of everything.
+                        </p>
                     </li>
                     <li class="team__item">
-                        <img src="#" alt="">
+                        <img src="./src/img/woman.webp" alt="Victoria">
                         <p class="team__name">Victoria Romashenko</p>
-                        <p class="team__text">The Sunseeker Manhattan 66 was the perfect choice for our romantic
-                            getaway.
-                            The yacht was beautifully designed, with all the amenities we needed, and the crew was
-                            attentive
-                            and friendly. </p>
+                        <p class="team__text">
+                            The Sunseeker Manhattan 66 was the perfect choice for our romantic
+                            getaway. The yacht was beautifully designed, with all the amenities
+                            we needed, and the crew was attentive and friendly.
+                        </p>
                     </li>
                     <li class="team__item">
-                        <img src="#" alt="">
+                        <img src="./src/img/man2.webp" alt="Ihor">
                         <p class="team__name">Ihor Trachuk</p>
-                        <p class="team__text">The Azimut 80 was the most luxurious yacht I've ever been on. The cabins
-                            were
-                            spacious and elegant, and the outdoor areas were perfect for relaxing and entertaining.
-                            Worth
-                            every penny!</p>
+                        <p class="team__text">
+                            The Azimut 80 was the most luxurious yacht I've ever been on.
+                            The cabins were spacious and elegant, and the outdoor areas were
+                            perfect for relaxing and entertaining.
+                        </p>
                     </li>
+                </ul>
+                <div class="team__slider">
+                    <div class="team__dots">
+                        <span class="team__dot active"></span>
+                        <span class="team__dot"></span>
+                        <span class="team__dot"></span>
+                    </div>
+                    <button class="team__next" type="button">
+                        →
+                    </button>
+                </div>
                 </ul>
             </div>
         </section>
@@ -420,6 +485,18 @@
                 </li>
                 <li class="socials__item">
                     <img class="socials__social" src="./image/u_youtube.svg" alt="youtube">
+                    <a href="">
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="">
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>

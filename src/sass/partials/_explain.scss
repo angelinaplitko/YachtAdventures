@@ -1,0 +1,71 @@
+/* ========================================
+   EXPLAIN
+======================================== */
+
+.explain { 
+    background-color: #0b1018; 
+    padding: 40px 0 60px; 
+    color: #ffffff; 
+} 
+
+.explain .container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 100px;
+
+    align-items: start;
+}
+
+
+/* left big text */
+
+.explain__subtext {
+    max-width: 370px;
+ 
+    margin-left: 25px;
+
+    color: var(--color3);
+
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+
+    font-style: italic;
+}
+
+.explain__bald {
+    color: var(--color4);
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* right text columns */
+
+.explain__list {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 25px;
+
+    margin: 0;
+}
+
+.explain__item {
+    width: 153px;
+}
+
+.explain__text {
+    margin: 0;
+
+    color: var(--color4);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+}

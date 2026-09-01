@@ -1,0 +1,133 @@
+.hero {
+    &__container {
+        padding-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        padding-top: 40px;
+        padding-left: 24px;
+    }
+
+    &__people {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+    }
+
+    &__title__itl {
+        background: linear-gradient(92.17deg, #bec7c2 40.91%, #a1b5ba 90.1%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #F6F5EF;
+        margin-top: 14px;
+        margin-bottom: 24px;
+    }
+
+    &__start {
+        border-radius: 60px;
+        padding: 14px 28px;
+        width: 150px;
+        height: 48px;
+        background: #93ABAE;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+        border: none;
+        margin-right: 8px;
+    }
+
+    &__explore {
+        border: 1px solid #F6F5EF;
+        border-radius: 60px;
+        padding: 14px 28px;
+        width: 117px;
+        height: 48px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+        background-color: transparent;
+        margin-bottom: 40px;
+    }
+
+    &__albom {
+        width: 335px;
+        height: 427px;
+        background-image: linear-gradient(to right bottom, #BEC7C2, #A1B5BA);
+        border-radius: 30px;
+    }
+
+    &__rich {
+        position: relative;
+        border-radius: 24px;
+        width: 133px;
+        height: 133px;
+        bottom: 322px;
+        left: 224px;
+    }
+
+    &__clients {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 110%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #1F212D;
+        padding-left: 24px;
+        margin-top: 11px;
+    }
+
+    &__boat {
+        position: relative;
+        width: 287px;
+        height: 167px;
+        left: 24px;
+        top: 52px;
+    }
+
+    &__money {
+        position: relative;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: #11131F;
+        bottom: -67px;
+        left: 24px;
+    }
+
+    &__suvtext {
+        font-family: "DM Sans", sans-serif;
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+        color: #11131F;
+        max-width: 169px;
+        bottom: -25px;
+        left: 142px;
+    }
+}

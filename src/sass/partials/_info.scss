@@ -2,6 +2,14 @@
 @use "../utiles/common";
 
 .info {
+    &__container {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__list {
         display: flex;
         gap: 56px;
@@ -100,5 +108,47 @@
         line-height: 118%;
         letter-spacing: 0.03em;
         color: #F6F5EF;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 47px;
+        gap: 14px;
+    }
+
+    &__next {
+        border-radius: 60px;
+        border: 1px solid #F6F5EF;
+        background-color: transparent;
+        width: 40px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+    }
+
+    &__left {
+        width: 18px;
+        height: 8px;
+    }
+
+    &__prev {
+        border-radius: 60px;
+        border: 1px solid #F6F5EF;
+        background-color: transparent;
+        width: 40px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+    }
+
+    &__right {
+        width: 18px;
+        height: 8px;
+        transform: rotate(180deg);
     }
 }

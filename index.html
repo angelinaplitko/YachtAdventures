@@ -18,8 +18,8 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <a href="./index.html">YACHT ADVENTURES</a>
+        <div class="container header__container">
+            <a href="./index.html" class="header__name">YACHT ADVENTURES</a>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
@@ -33,36 +33,39 @@
                     </li>
                 </ul>
             </nav>
+            <button class="header__button">
+                <img src="./src/img/vector.webp" alt="vector" class="header__image">
+            </button>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container">
-                <div class="hero__albom">
-                    <ul class="albom__list">
-                        <li class="albom__item">
-                            <img src="#" alt="man1" class="albom__people">
-                        </li>
-                        <li class="albom__item">
-                            <img src="#" alt="woman" class="albom__people">
-                        </li>
-                        <li class="albom__item">
-                            <img src="#" alt="man2" class="albom__people">
-                        </li>
-                    </ul>
-                    <p class="hero__clients">Our Clients</p>
-                    <img src="#" alt="boat" class="hero__boat">
-                    <h3 class="hero__money">$12M</h3>
-                    <p class="hero__text">Book now and make your dream yacht rental a reality</p>
-                </div>
-                <img src="#" alt="richboy">
-                <h2 class="hero__title">Explore the High Seas with <span class="hero__title--ital">Our Luxury
+            <div class="container hero__container">
+                <h2 class="hero__title">Explore the High Seas with <span class="hero__title__itl">Our Luxury
                         Yacht</span> Rentals</h2>
                 <p class="hero__text">Experience the freedom and luxury of yachting on the open seas. Choose from our
                     top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and
                     state-of-the-art amenities.</p>
                 <button type="button" class="hero__start">Get Started</button>
                 <button type="button" class="hero__explore">Explore</button>
+                <div class="hero__albom">
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <img src="./src/img/hero-man.webp" alt="man1" class="hero__people">
+                        </li>
+                        <li class="hero__item">
+                            <img src="./src/img/hero-woman.webp" alt="woman" class="hero__people">
+                        </li>
+                        <li class="hero__item">
+                            <img src="./src/img/hero-man2.webp" alt="man2" class="hero__people">
+                        </li>
+                    </ul>
+                    <p class="hero__clients">Our Clients</p>
+                    <img src="./src/img/hero-yaht.webp" alt="boat" class="hero__boat">
+                    <h3 class="hero__money">$12M</h3>
+                    <p class="hero__suvtext">Book now and make your dream yacht rental a reality</p>
+                    <img src="./src/img/hero-rich.webp" alt="richboy" class="hero__rich">
+                </div>
             </div>
         </section>
         <section class="explain">
@@ -90,22 +93,24 @@
             <div class="container">
                 <ul class="dream__list">
                     <li class="dream__item">
-                        <img src="#" alt="boat">
+                        <img src="./src/img/dream-yaht.webp" alt="boat" class="dream__fyaht">
                     </li>
                     <li class="dream__item">
-                        <img src="#" alt="boat2">
+                        <img src="./src/img/dream-yaht2.webp" alt="boat2" class="dream__syaht">
                     </li>
                     <li class="dream__item">
-                        <img src="#" alt="boat3">
+                        <img src="./src/img/dream-yaht3.webp" alt="boat3" class="dream__tyaht">
                     </li>
                 </ul>
-                <h2 class="dream__title">Choose your dream yacht and sail away into the sunset</h2>
-                <button class="dream__button">Yacht rental</button>
+                <div class="dream__dive">
+                    <h2 class="dream__title">Choose your dream yacht and sail away into the sunset</h2>
+                    <button class="dream__button">Yacht rental</button>
+                </div>
             </div>
         </section>
         <section class="info">
-            <div class="container">
-                <ul class="info__list">
+            <div class="container info__container">
+                <ul class="info__list carousel-track">
                     <li class="info__item">
                         <img src="./src/img/boat1.webp" alt="" class="info__image">
                         <h4 class="info__name">Arrow</h4>
@@ -296,50 +301,58 @@
                         </div>
                     </li>
                 </ul>
+                <div class="info__buttons">
+                    <button class="info__next">
+                        <img src="./src/img/arrow.webp" alt="arrow" class="info__left">
+                    </button>
+                    <button class="info__prev">
+                        <img src="./src/img/arrow.webp" alt="arrow" class="info__right">
+                    </button>
+                </div>
             </div>
         </section>
         </section>
-        <section class="aktivities">
+        <section class="aktivities aktivities__container">
             <div class="container">
                 <ul class="aktivities__list">
                     <li class="aktivities__item">
-                        <img src="#" alt="diving">
-                        <button type="button">Diving</button>
+                        <img src="./src/img/aktivities-diving.webp" alt="diving" class="aktivities__aktivi">
+                        <button type="button" class="aktivities__button">Diving</button>
                     </li>
                     <li class="aktivities__item">
-                        <img src="#" alt="fishing">
-                        <button type="button">Fishing</button>
+                        <img src="./src/img/aktivities-fishing.webp" alt="fishing" class="aktivities__aktivi">
+                        <button type="button" class="aktivities__button">Fishing</button>
                     </li>
                     <li class="aktivities__item">
-                        <img src="#" alt="sunbathing">
-                        <button type="button">Sunbathing</button>
+                        <img src="./src/img/aktivities-sunbushing.webp" alt="sunbathing" class="aktivities__aktivi">
+                        <button type="button" class="aktivities__button">Sunbathing</button>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="send">
-            <div class="container">
+            <div class="container send__container">
                 <h2 class="send__title">Rent a yacht now</h2>
-                <img src="#" alt="boat">
-                <form>
-                    <label>
-                        <input type="text" placeholder="Full Name">
+                <img src="./src/img/send-yaht.webp" alt="boat" class="send__boat">
+                <form class="send__form">
+                    <label class="send__labe">
+                        <input type="text" placeholder="Full Name" class="send__inp">
                     </label>
-                    <label>
-                        <input type="email" placeholder="Email">
+                    <label class="send__labe">
+                        <input type="email" placeholder="Email" class="send__inp">
                     </label>
-                    <label>
-                        <input type="tel" placeholder="Phone number">
+                    <label class="send__labe">
+                        <input type="tel" placeholder="Phone number" class="send__inp">
                     </label>
-                    <label>
-                        <textarea placeholder="Comment"></textarea>
+                    <label class="send__labe">
+                        <textarea placeholder="Comment" class="send__are"></textarea>
                     </label>
                     <button type="submit" class="send__button">Send</button>
                 </form>
             </div>
         </section>
         <section class="team">
-            <div class="container">
+            <div class="container team__container">
                 <div class="team__texts">
                     <p class="team__subtitle">Yacht Adventures <b class="team__bold">take pride in providing the best
                             possible
@@ -351,7 +364,7 @@
                 </div>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="./src/img/man1.webp" alt="John">
+                        <img src="./src/img/man1.webp" alt="John" class="team__worker">
                         <p class="team__name">John Wax</p>
                         <p class="team__text">
                             I rented the Lagoon 620 with my family for a week-long vacation
@@ -360,7 +373,7 @@
                         </p>
                     </li>
                     <li class="team__item">
-                        <img src="./src/img/woman.webp" alt="Victoria">
+                        <img src="./src/img/woman.webp" alt="Victoria" class="team__worker">
                         <p class="team__name">Victoria Romashenko</p>
                         <p class="team__text">
                             The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -369,7 +382,7 @@
                         </p>
                     </li>
                     <li class="team__item">
-                        <img src="./src/img/man2.webp" alt="Ihor">
+                        <img src="./src/img/man2.webp" alt="Ihor" class="team__worker">
                         <p class="team__name">Ihor Trachuk</p>
                         <p class="team__text">
                             The Azimut 80 was the most luxurious yacht I've ever been on.
@@ -380,9 +393,9 @@
                 </ul>
                 <div class="team__slider">
                     <div class="team__dots">
-                        <span class="team__dot active"></span>
-                        <span class="team__dot"></span>
-                        <span class="team__dot"></span>
+                        <div class="team__dot__active" type="button"></div>
+                        <div class="team__dot" type="button"></div>
+                        <div class="team__dot" type="button"></div>
                     </div>
                     <button class="team__next" type="button">
                         →
@@ -393,46 +406,45 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <a href="./index.html">YACHT ADVENTURES</a>
+        <div class="container footer__container">
+            <a href="./index.html" class="footer__title">YACHT ADVENTURES</a>
             <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="#">About</a>
+                <li class="footer__ite">
+                    <a href="#" class="footer__link">About</a>
                 </li>
-                <li class="footer__item">
-                    <a href="#">Yachts</a>
+                <li class="footer__ite">
+                    <a href="#" class="footer__link">Yachts</a>
                 </li>
-                <li class="footer__item">
-                    <a href="#">Reviews</a>
+                <li class="footer__ite">
+                    <a href="#" class="footer__link">Reviews</a>
                 </li>
             </ul>
-            <h4>We in social</h4>
+            <h4 class="footer__social">We in social</h4>
             <ul class="footer__socials">
-                <li class="socials__item">
-                    <a href="">
-                        <svg>
-                            <use></use>
-                        </svg>
+                <li class="footer__item">
+                    <a href="" class="footer__fotos">
+                        <img src="./src/img/facebook.webp" alt="facebook" class="footer__imgf">
                     </a>
                 </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg>
-                            <use></use>
-                        </svg>
+                <li class="footer__item">
+                    <a href="" class="footer__fotos">
+                        <img src="./src/img/insta.webp" alt="insta" class="footer__img">
                     </a>
                 </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg>
-                            <use></use>
-                        </svg>
+                <li class="footer__item">
+                    <a href="" class="footer__fotos">
+                        <img src="." alt="youtube" class="footer__img">
                     </a>
                 </li>
             </ul>
+            <div class="footer__infos">
+                <p class="footer__info">2023. Yacht Adventures</p>
+                <p class="footer__info">Privacy Police</p>
+            </div>
         </div>
     </footer>
     <script src="./skript.js"></script>
+    <script src="./galery.js"></script>
 </body>
 
 </html>

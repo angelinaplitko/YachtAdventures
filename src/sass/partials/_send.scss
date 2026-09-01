@@ -1,0 +1,79 @@
+.send {
+    &__container {
+        padding-bottom: 80px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+    }
+
+    &__boat {
+        width: 259px;
+        height: 187px;
+        margin-top: 16px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    &__inp {
+        background-color: transparent;
+        border: none;
+        width: 335px;
+        padding-bottom: 16px;
+        border-bottom: solid 1px #F6F5EF;
+    }
+
+    &__inp::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+    }
+
+    &__are {
+        background-color: transparent;
+        width: 335px;
+        height: 75px;
+        border: none;
+        border-bottom: solid 1px #F6F5EF;
+    }
+
+    &__are::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+    }
+
+    &__button {
+        border: 1px solid #F6F5EF;
+        border-radius: 60px;
+        padding: 14px 28px;
+        width: 123px;
+        height: 43px;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #F6F5EF;
+        text-align: center;
+    }
+
+    &__blick {
+        position: relative;
+        width: 283px;
+        height: 283px;
+    }
+}

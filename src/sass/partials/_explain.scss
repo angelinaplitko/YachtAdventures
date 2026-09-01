@@ -1,0 +1,33 @@
+.explain {
+    &__subtext {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        background: linear-gradient(92.17deg, #bec7c2 40.23%, #a1b5ba 88.86%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 80px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__text {
+        display: flex;
+        margin-top: 40px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #F6F5EF;
+        max-width: 160px;
+        padding-bottom: 40px;
+    }
+}

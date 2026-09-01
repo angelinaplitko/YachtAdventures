@@ -1,0 +1,25 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        border-bottom: 1px solid #FFF;
+    }
+
+    &__name {
+        color: #F6F5EF;
+        display: flex;
+        margin-right: auto;
+        padding-bottom: 27px;
+        padding-top: 27px;
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+}

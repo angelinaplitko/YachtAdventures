@@ -1,0 +1,95 @@
+.footer {
+    &__container {
+        padding-top: 44px;
+    }
+
+    &__title {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        color: #F6F5EF;
+        padding-left: 26px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 118%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #F6F5EF;
+    }
+
+    &__social {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: #F6F5EF;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        border: 1px solid rgba(246, 245, 239, 0.5);
+        margin-bottom: 40px;
+    }
+
+    &__imgf {
+        display: inline;
+        width: 8px;
+        height: 15px;
+    }
+
+    &__img {
+        display: block;
+        width: 14px;
+        height: 14px;
+    }
+
+    &__infos {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 14px;
+        gap: 14px;
+    }
+
+    &__info {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 118%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: rgba(246, 245, 239, 0.5);
+    }
+
+    &__blick {
+        position: relative;
+        width: 420px;
+        height: 420px;
+        border-radius: 100%;
+        background-color: #93ABAE;
+        filter: blur(200px);
+        bottom: -35px;
+        left: 605px;
+    }
+}
